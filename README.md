@@ -1,1 +1,3 @@
-React boilerplate with Typescript, Tailwind, SASS, ESLint and Prettier.
+Website of the music store ProMusic.  
+
+React SPA made with Typescript, Tailwind and SASS.
