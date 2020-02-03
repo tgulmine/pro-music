@@ -1,5 +1,28 @@
-$nana: #bb1010;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rye&display=swap');
 
 .App {
-  color: $nana;
+  font-family: 'Roboto', sans-serif;
+
+  background-image: url('../img/bg-guitar.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+.rye {
+  font-family: 'Rye', cursive;
+}
+
+.main {
+  &-logo {
+    width: 180px;
+    height: 71px;
+  }
+}
+
+.spotify {
+  background-image: url('../img/bg-spotify.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }

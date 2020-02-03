@@ -15,6 +15,17 @@ module.exports = {
       black: '#000',
       white: '#fff',
 
+
+      pro: {
+        guitar: 'rgba(227, 147, 73, 0.5)',
+        searchBg: 'rgba(0, 0, 0, 0.24)',
+        searchPh: '#DCDCDC',
+        offersBg: 'rgba(0, 0, 0, 0.54)',
+        offersDesc: 'rgba(0, 0, 0, 0.16)',
+        arrow: 'rgba(0, 0, 0, 0.24)',
+        spotifyBanner: '#557D00',
+        spotifyBg: 'rgba(70, 70, 70, 0.54)'
+      },
       gray: {
         100: '#f7fafc',
         200: '#edf2f7',
@@ -26,8 +37,7 @@ module.exports = {
         800: '#2d3748',
         900: '#1a202c',
         light: '#F2F2F2',
-        dark: '#C4C4C4',
-        nanana: '#fc8181'
+        dark: '#C4C4C4'
       },
       red: {
         100: '#fff5f5',
@@ -151,7 +161,8 @@ module.exports = {
       '40': '10rem',
       '48': '12rem',
       '56': '14rem',
-      '64': '16rem'
+      '64': '16rem',
+      '80': '20rem'
     },
     backgroundColor: theme => theme('colors'),
     backgroundPosition: {
@@ -198,9 +209,8 @@ module.exports = {
       inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
       outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
       none: 'none',
-      header: '0 5px 6px rgba(0, 0, 0, 0.5)',
-      equipe: '0 4px 4px rgba(0, 0, 0, 0.25)',
-      card: '8px 8px 4px rgba(0, 0, 0, 0.25)'
+      spotify: '0px 12px 4px rgba(0, 0, 0, 0.25)',
+      main: '0px 12px 4px rgba(0, 0, 0, 0.15);'
     },
     container: {},
     cursor: {
