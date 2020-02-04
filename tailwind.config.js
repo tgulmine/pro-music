@@ -210,7 +210,7 @@ module.exports = {
       outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
       none: 'none',
       spotify: '0px 12px 4px rgba(0, 0, 0, 0.25)',
-      main: '0px 12px 4px rgba(0, 0, 0, 0.15);'
+      main: '0px 12px 4px rgba(0, 0, 0, 0.15)'
     },
     container: {},
     cursor: {
@@ -404,6 +404,7 @@ module.exports = {
       '3/6': '50%',
       '4/6': '66.666667%',
       '5/6': '83.333333%',
+      '1/7': '14.2857%',
       '3/8': '37.5%',
       '5/8': '62.5%',
       '7/8': '87.5%',

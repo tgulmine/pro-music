@@ -1,8 +1,11 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import searchIcon from '../img/icon-search.png';
 import star from '../img/star.png';
 
 const Main: React.FC = () => {
+  const [hoverInst, setHoverInst] = useState(false);
+  const [hoverAcce, setHoverAcce] = useState(false);
+
   return (
     <div>
       <div className="w-screen h-screen">
@@ -12,8 +15,52 @@ const Main: React.FC = () => {
               <div className="text-center rye text-white text-2xl">ProMusic</div>
             </div>
             <div className="border-b border-black flex items-center">
-              <div className="cursor-pointer p-8 pt-4 pb-4 text-white text-base">INSTRUMENTS</div>
-              <div className="cursor-pointer p-8 pt-4 pb-4 text-white text-base">ACCESSORIES</div>
+              <div
+                className="cursor-pointer p-8 pt-4 pb-4 text-white text-base first:hover:visible"
+                onMouseEnter={() => setHoverInst(true)}
+                onMouseLeave={() => setHoverInst(false)}
+              >
+                INSTRUMENTS
+                {hoverInst && (
+                  <div
+                    className="absolute mt-4 rounded-lg bg-white shadow-main w-1/7 flex flex-col
+                text-black text-sm font-light p-2 cursor-default"
+                  >
+                    <div className="hover:bg-pro-guitar p-1 rounded mt-1 mb-1 cursor-pointer">Acoustic Guitars</div>
+                    <div className="hover:bg-pro-guitar p-1 rounded mt-1 mb-1 cursor-pointer">Acoustic-Electric Guitars</div>
+                    <div className="hover:bg-pro-guitar p-1 rounded mt-1 mb-1 cursor-pointer">Electric Guitars</div>
+                    <div className="hover:bg-pro-guitar p-1 rounded mt-1 mb-1 cursor-pointer">Basses</div>
+                    <div className="hover:bg-pro-guitar p-1 rounded mt-1 mb-1 cursor-pointer">Ukuleles</div>
+                    <div className="hover:bg-pro-guitar p-1 rounded mt-1 mb-1 cursor-pointer">Banjos</div>
+                    <div className="hover:bg-pro-guitar p-1 rounded mt-1 mb-1 cursor-pointer">Mandolin Family</div>
+                    <div className="hover:bg-pro-guitar p-1 rounded mt-1 mb-1 cursor-pointer">Violin Family</div>
+                    <div className="hover:bg-pro-guitar p-1 rounded mt-1 mb-1 cursor-pointer">Left-Handed Instruments</div>
+                  </div>
+                )}
+              </div>
+              <div
+                className="cursor-pointer p-8 pt-4 pb-4 text-white text-base first:hover:visible"
+                onMouseEnter={() => setHoverAcce(true)}
+                onMouseLeave={() => setHoverAcce(false)}
+              >
+                ACCESSORIES
+                {hoverAcce && (
+                  <div
+                    className="absolute mt-4 rounded-lg bg-white shadow-main w-1/7 flex flex-col
+                text-black text-sm font-light p-2 cursor-default"
+                  >
+                    <div className="hover:bg-pro-guitar p-1 rounded mt-1 mb-1 cursor-pointer">Strings</div>
+                    <div className="hover:bg-pro-guitar p-1 rounded mt-1 mb-1 cursor-pointer">Capos</div>
+                    <div className="hover:bg-pro-guitar p-1 rounded mt-1 mb-1 cursor-pointer">Stands</div>
+                    <div className="hover:bg-pro-guitar p-1 rounded mt-1 mb-1 cursor-pointer">Picks</div>
+                    <div className="hover:bg-pro-guitar p-1 rounded mt-1 mb-1 cursor-pointer">Banjo Heads</div>
+                    <div className="hover:bg-pro-guitar p-1 rounded mt-1 mb-1 cursor-pointer">Cases & Gigbags</div>
+                    <div className="hover:bg-pro-guitar p-1 rounded mt-1 mb-1 cursor-pointer">Humidification</div>
+                    <div className="hover:bg-pro-guitar p-1 rounded mt-1 mb-1 cursor-pointer">Cables</div>
+                    <div className="hover:bg-pro-guitar p-1 rounded mt-1 mb-1 cursor-pointer">Gift Cards</div>
+                  </div>
+                )}
+              </div>
               <div className="bg-pro-searchBg rounded flex">
                 <img className="object-none pr-2 pl-2" alt="" src={searchIcon} />
                 <input className="outline-none p-1 bg-transparent text-white placeholder-pro-searchPh" type="text" placeholder="search" />
